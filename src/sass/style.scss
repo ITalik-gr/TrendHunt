@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: 'Manrope', Helvetica, sans-serif;
+  min-height: 5835px;
+  margin: 0;
+  background: linear-gradient(180deg, #F4F5F9 0%, rgba(242, 242, 255, 0.78) 0.01%, #F4F5F9 100%);
+}
+*,*::before,*::after {
+  box-sizing: border-box;
+
+}
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}
+ul {
+  margin: 0px;
+}
+:focus,:active {
+  outline: none;
+}
+a:focus,a:active {
+  outline: none;
+}
+html,body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 0 1200px auto;
+}
+@import '../sass/block/button';
+@import '../sass/block/footer';
+@import '../sass/block/header';
