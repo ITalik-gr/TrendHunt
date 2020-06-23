@@ -4,7 +4,6 @@
 }
 body {
   font-family: 'Manrope', Helvetica, sans-serif;
-  min-height: 5835px;
   margin: 0;
   background: linear-gradient(180deg, #F4F5F9 0%, rgba(242, 242, 255, 0.78) 0.01%, #F4F5F9 100%);
 }
@@ -34,6 +33,34 @@ html,body {
 .container {
   max-width: 0 1200px auto;
 }
+.btn {
+
+}
+.btn-log {
+    background: #713BDB;
+    border-radius: 100px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    padding: 25px 62px;
+    position: relative;
+    &:after {
+      content: '';
+      background: #713BDB;
+      opacity: 0.3;
+      filter: blur(60px);
+      border-radius: 100px;
+      position: absolute;
+      bottom: -17px;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      border-radius: 100px;
+    }
+}
 @import '../sass/block/button';
 @import '../sass/block/footer';
 @import '../sass/block/header';
+@import '../sass/block/profit';
+@import '../sass/block/create';

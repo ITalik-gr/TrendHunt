@@ -1,0 +1,128 @@
+
+
+.profit { // Section
+  padding-bottom: 22px;
+  &__btn {
+    text-align: center;
+    &-wrap {
+      margin-top: 65px;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  overflow: hidden;
+  &__img {
+    img {
+      border-top-left-radius: 40px;
+      border-bottom-left-radius: 40px;
+    }
+  }
+  &__container { //section__container
+
+  }
+  &__content { //section__content
+    flex: 0 0 100%;
+  }
+  &__img { //section__image
+    max-width: 90%;
+  }
+  &__body { //section__dody
+    width: 50%;
+  }
+  &__wrap {
+    display: flex;
+    
+  }
+  &__card-wrap {
+    display: flex;
+  }
+  &__col-1 {
+    margin-right: 22px;
+  }
+  &__col-2 {
+    margin-top: 45px;
+  }
+  &__title {
+    margin-top: calc(155px - 70);
+    font-weight: 800;
+    font-size: 42px;
+    line-height: 57px;
+    text-align: center;
+    color: #000000;
+  }
+  &-card {
+    width: 285px;
+    height: 173px;
+    margin-top: 27px;
+    z-index: 5;
+    background: #FFFFFF;
+    position: relative;
+    border-radius: 10px;
+    padding: 40px 30px 62px 23px;
+    &:hover {
+      cursor: pointer;
+    }
+    &__wrap {
+      position: relative;
+      &-1 {
+
+      }
+      &-2 {
+        &::before {
+          background: rgba(112, 187, 142, 0.301)!important;  
+        }
+      }
+      &-3 {
+        &::before {
+          background: rgba(74, 183, 255, 0.301)!important;  
+        }
+      }
+      &-4 {
+        &::before {
+          background: rgba(219, 184, 59, 0.329)!important;  
+        }
+      }
+      &::before {
+        content: '';
+        top: -5px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -1;
+        position: absolute;
+        width: 243px;
+        height: 120px;
+        background: rgba(112, 59, 219, 0.308);
+        border-radius: 10px;
+      }
+    }
+
+    &__num {
+      font-weight: 800;
+      font-size: 12px;
+      line-height: 16px;
+      color: #713BDB;
+    }
+    &__text {
+      margin-top: 6px;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 22px;
+      color: #000000;
+      p {
+        max-width: 232px;
+      }
+    }
+  }
+}
+@media (min-width: 767px) {
+  .profit {
+    display: flex;
+  }
+  .profit__img {
+    img {
+      flex: 0 0 50%;
+      transform: translate(-100%, 0px);
+    }
+
+  }
+}

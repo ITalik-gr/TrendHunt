@@ -1,0 +1,19 @@
+
+.create {
+  min-height: 1364.46px;
+  background: url(../img/create__bg.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &__wrap {
+
+  }
+  &__title {
+    padding-top: 301px;
+    text-align: center;
+    font-weight: 800;
+    font-size: 42px;
+    line-height: 57px;
+    color: #FFFFFF;
+  }
+}

@@ -44,6 +44,7 @@
     align-items: center;
   }
   &__img {
+    margin-top: -60px;
     img {
       max-width: 100%;
     }
@@ -70,28 +71,6 @@
     }
   }
   &__btn {
-    background: #713BDB;
-    border-radius: 100px;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 19px;
-    color: #FFFFFF;
-    padding: 25px 62px;
     margin-top: 22px;
-    position: relative;
-    &:after {
-      content: '';
-      // background: url(../img/Blur.png);
-      background: #713BDB;
-      opacity: 0.3;
-      filter: blur(60px);
-      border-radius: 100px;
-      position: absolute;
-      bottom: -17px;
-      width: 100%;
-      height: 100%;
-      left: 0;
-      border-radius: 100px;
-    }
   }
 }
