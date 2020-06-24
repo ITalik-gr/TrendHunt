@@ -59,6 +59,43 @@ html,body {
       border-radius: 100px;
     }
 }
+.elipse-h-r-1 {
+  position: absolute;
+  top: 145px;
+  right: 0;
+}
+.elipse-h-r-2 {
+  position: absolute;
+  top: 350px;
+  right: 0;
+  z-index: -2;
+}
+.elipse-h-r-3 {
+  position: absolute;
+  right: 150px;
+  top: 25px;
+}
+.union-h-r-1 {
+  position: absolute;
+  right: 110px;
+  top: 400px;
+}
+.union-h-l-2 {
+  position: absolute;
+  left: 106px;
+  top: 110px;
+}
+.elipse-h-l-4 {
+  position: absolute;
+  top: 340px;
+  left: 0;
+}
+.elipse-h-l-5 {
+  position: absolute;
+  z-index: -2;
+  bottom: 30px;
+  left: 0;
+}
 @import '../sass/block/button';
 @import '../sass/block/footer';
 @import '../sass/block/header';

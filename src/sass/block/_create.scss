@@ -5,8 +5,12 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-bottom: 90px;
   &__wrap {
-
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
   &__title {
     padding-top: 301px;
@@ -15,5 +19,88 @@
     font-size: 42px;
     line-height: 57px;
     color: #FFFFFF;
+  }
+  &-card {
+    background: #FFFFFF;
+    border-radius: 20px;
+    width: 350px;
+    height: 274px;
+    padding: 30px 65px 31px 29px;
+    // margin-right: 30px; // Если спейс битвин слетит
+    margin-bottom: 32px;
+    &:nth-child(3n+3) {
+      margin-right: 0;
+    }
+    &__img {
+      position: relative;
+      height: 60px;
+      width: 60px;
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+      }
+      span {
+        background: #713BDB;
+        opacity: 0.07;
+        height: 40px;
+        width: 40px;
+        border-radius: 100%;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+      }
+    }
+    &__title {
+      margin-top: 25px;
+      font-weight: 800;
+      font-size: 16px;
+      line-height: 22px;
+      color: #000000;
+    }
+    &__descr {
+      margin-top: 20px;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 22px;
+      color: #000000;
+      p {
+        max-width: 255px;
+      }
+    }
+  }
+  &-trial {
+    background: #FFFFFF;
+    border-radius: 25px;
+    padding: 40px 63px 42px 78px;
+    margin-top: 77px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__title {
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 30px;
+      color: #000000;
+      span {
+        font-weight: 600;
+        font-size: 42px;
+        line-height: 27px;
+        color: #000000;
+        border-bottom: 5px solid #FF6C5A;
+      }
+    }
+    &__btn {
+      padding: 25px 67px;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 19px;
+      color: #FFFFFF;
+      background: #FF6C5A;
+      box-shadow: 0px 15px 30px rgba(255, 108, 90, 0.17);
+      border-radius: 100px;
+    }
   }
 }

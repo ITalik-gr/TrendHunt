@@ -37,6 +37,7 @@
 }
 
 .header {
+  position: relative;
   &__wrap {
     display: flex;
     flex-direction: column;
@@ -44,6 +45,9 @@
     align-items: center;
   }
   &__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: -60px;
     img {
       max-width: 100%;
