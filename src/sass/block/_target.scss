@@ -1,0 +1,122 @@
+
+.target {
+  margin-top: 30px;
+  position: relative;
+  &__union {
+    position: absolute;
+    top: 266px;
+    right: 110px;
+  }
+  &__wrap {
+    margin-bottom: 110px;
+  }
+  &-buttons {
+    margin-bottom: 60px;
+  }
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__title {
+    font-weight: 800;
+    font-size: 42px;
+    line-height: 57px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 33px;
+    
+  }
+  &__descr {
+    font-size: 16px;
+    line-height: 134.6%;
+    text-align: center;
+    color: #0C0C0C;
+    margin-bottom: 77px;
+    p {
+      width: 676px;
+    }
+  }
+  &__subtitle {
+    margin-bottom: 33px;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #000000;
+    p {
+      width: 643px;
+    }
+  }
+  &__btn {
+    width: 237px;
+    height: 68px;
+    &-1 {
+      box-shadow: 0px 15px 30px rgba(113, 59, 219, 0.2);
+      margin-right: 20px;
+    }
+    &-2 {
+      padding: 25px 80px;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 19px;
+      color: #713BDB;
+      border: 1px solid #713BDB;
+      box-sizing: border-box;
+      box-shadow: 0px 15px 30px rgba(113, 59, 219, 0.2);
+      border-radius: 100px;
+    }
+  }
+  &-card {
+    padding: 35px 66px 35px 35px;
+    display: flex;
+    justify-content: space-between;
+    background: #FFFFFF;
+    border-radius: 20px;
+    &__sub {
+      margin-top: 50px;
+      display: flex;
+      justify-content: center;
+      font-size: 16px;
+      line-height: 134.6%;
+      text-align: center;
+      color: #0C0C0C;
+      p {
+        max-width: 676px;
+      }
+    }
+    &__content {
+      &:nth-child(4) {
+        margin-bottom: 0;
+      }
+    }
+    &__image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &__box {
+      margin-bottom: 15px;
+      padding: 20px 30px 21px 18px;
+      max-width: 411px;
+      max-height: 139px;
+      border: 1px solid rgba(112, 59, 219, 0.205);
+      box-sizing: border-box;
+      border-radius: 10px;
+      &__title {
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 22px;
+        color: #713BDB;
+      }
+      &__descr {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 19px;
+        color: #000000;
+        max-width: 363px;
+      }
+    }
+  }
+}

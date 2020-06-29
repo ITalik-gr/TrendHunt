@@ -96,8 +96,28 @@ html,body {
   bottom: 30px;
   left: 0;
 }
+
+.profit__union-l {
+  position: absolute;
+  left: 100px;
+  top: 85px;
+}
+.profit__elipse-r {
+  position: absolute;
+  right: 65px;
+  bottom: -40px;
+}
+.elipse-33 {
+  position: absolute;
+  bottom: -500px;
+  left: 0;
+}
 @import '../sass/block/button';
 @import '../sass/block/footer';
 @import '../sass/block/header';
 @import '../sass/block/profit';
 @import '../sass/block/create';
+@import '../sass/block/target';
+@import '../sass/block/video';
+@import '../sass/block/graf';
+@import '../sass/block/question';
