@@ -4,9 +4,10 @@
   margin-top: 120px;
   position: relative;
   &__wrap { //acordeon
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
   }
   &__btn {
     &-wrap {
@@ -54,62 +55,68 @@
 }
 
 
+.content {
 
-
-.acc__card {
-  margin-bottom: 20px;
-  position: relative;
 }
-.acc__title {
+.accordion__item {
+  background: #FFFFFF;
+  border-radius: 15px;
+  width: 730px;
+}
+.accordion__item:not(:last-child) {
+  margin-bottom: 15px;
+}
+.accordion__header {
+  width: 100%;
+  height: 78px;
+  display: flex;
+  justify-content: start;
+  padding-left: 31px;
+  align-items: center;
+  // padding: 28px 0px 28px 31px;
+  // padding-right: 50px;
   font-weight: 800;
   font-size: 16px;
   line-height: 22px;
   color: #000000;
-  background: #FFFFFF;
-  border-radius: 15px;
-  padding: 28px 8px 28px 31px;
+  position: relative;
+  cursor: pointer;
+}
+.accordion__header::after {
+  content: '';
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  span {
-    background: #713BDB;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 63px;
-    height: 63px;
-  }
-  &::after {
-    background: url(../img/down.png) #713BDB no-repeat;
-    // background-size: cover;  
-    background-position: center;
-    border-radius: 10px;
-    width: 63px;
-    height: 63px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    // position: absolute;
-    // right: 0;
-    // top: 0;
-    content: "  ";
-  }
-  &.active {
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-  }
-  &.active::after {
-    transform: rotate(180deg);
-    transition: all 0.2s ease-in-out;
+  position: absolute;
+  max-height: 63px;
+  width: 63px;
+  box-sizing: border-box;
+  right: 20px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border-radius: 10px;
+  background: #713BDB url(../img/down.svg) no-repeat center;
+  background-size: unset;
+  transition: all .4s ease;
+}
+.accordion__body {
+  padding-left: 31px;
+  padding-bottom: 45px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-size: 16px;
+  line-height: 22px;
+  margin-top: 25px;
+  display: none;
+  p {
+    max-width: 617px;
   }
 }
-.acc__panel {
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
-  background: white;
-  color: black;
-  display: none;
-  padding: 30px 82px 46px 31px;
-  text-align: left;
+.open-accordion .accordion__body {
+  display: block;
+}
+.open-accordion .accordion__header::after {
+  transform: rotate(-180deg);
 }
