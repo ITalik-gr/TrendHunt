@@ -119,6 +119,48 @@ html,body {
   bottom: -500px;
   left: 0;
 }
+
+.elipse-top {
+  animation: elipse-top 5s infinite ease-in-out;
+}
+.union-rotate {
+  animation: union-rotate 15s infinite ease-in-out;
+}
+.union-rotate_back {
+  animation: union-rotate-back 10s infinite ease-in-out;
+}
+@keyframes union-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes union-rotate-back {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes elipse-top {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+
+
+
+
 @import '../sass/block/button';
 @import '../sass/block/footer';
 @import '../sass/block/header';
