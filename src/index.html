@@ -8,6 +8,7 @@
   <meta name="keywords" content="5-6 слов"/>
   <title>Document</title>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -35,29 +36,29 @@
     <img src="img/Union_header_1.svg" class="union-h-r-1 union-rotate_back" alt="">
 
     <img src="img/Union_header_2.svg" class="union-h-l-2 union-rotate" alt="">
-    <img src="img/Ellipse_header_sm-4.svg" class="elipse-h-l-4 " alt="">
+    <img src="img/Ellipse_header_sm-4.svg" class="elipse-h-l-4 elipse-top-bottom" alt="">
     <img src="img/Ellipse_header-bg-5.svg" class="elipse-h-l-5" alt="">
     <div class="container">
       <div class="header__wrap">
-        <h1 class="header__title">
+        <h1 data-aos="fade-up" class="header__title">
           № 1 сервис для поиска трендовых товаров в <span>eCommerce</span>
         </h1>
-        <div class="header__descr">
+        <di data-aos="fade-up"v class="header__descr">
           <p>
             Цель программы TRENDHUNT выявить самые трендовые товары, чтобы помочь дропшипперам и интернет предпринимателям успешно развивать свой онлайн бизнес. 
           </p>
-        </div>
-        <a href="#" class="header__btn btn btn-log">Узнать больше</a>
+        </di>
+        <a data-aos="fade-up" href="#" class="header__btn btn btn-log">Узнать больше</a>
       </div>
     </div>
-    <div class="header__img">
+    <div data-aos="fade-right" class="header__img">
       <img src="img/first__img.svg" alt="">
     </div>
   </div>
   <div class="profit__wrapper">
-    <img src="img/Union_profit.svg" alt="" class="profit__union-l">
-    <img src="img/Ellipse_profit.svg" alt="" class="profit__elipse-r">
-    <h3 class="profit__title">
+    <img src="img/Union_profit.svg" alt="" class="profit__union-l union-rotate">
+    <img src="img/Ellipse_profit.svg" alt="" class="profit__elipse-r pulse">
+    <h3 data-aos="fade-right" class="profit__title">
       Что вы получите?
     </h3>
     <div id="profit" class="profit"> <!-- Section -->
@@ -67,8 +68,8 @@
             <div class="profit__wrap">
               <div class="profit__card-wrap">
                 <div class="profit__col-1">
-                  <div class="profit-card__wrap profit-card__wrap-1">
-                    <div class="profit-card">
+                  <div data-aos="fade-up-right" class="profit-card__wrap profit-card__wrap-1">
+                    <div  class="profit-card">
                       <div class="profit-card__num">
                         01
                       </div>
@@ -79,7 +80,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="profit-card__wrap profit-card__wrap-3">
+                  <div data-aos="fade-up-right" class="profit-card__wrap profit-card__wrap-3">
                     <div class="profit-card">
                       <div class="profit-card__num">
                         03
@@ -91,7 +92,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="profit-card__wrap profit-card__wrap-1">
+                  <div data-aos="fade-up-right" class="profit-card__wrap profit-card__wrap-1">
                     <div class="profit-card">
                       <div class="profit-card__num">
                         05
@@ -103,7 +104,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="profit-card__wrap profit-card__wrap-3">
+                  <div data-aos="fade-up-right" class="profit-card__wrap profit-card__wrap-3">
                     <div class="profit-card">
                       <div class="profit-card__num">
                         07
@@ -117,7 +118,7 @@
                   </div>
                 </div>
                 <div class="profit__col-2">
-                  <div class="profit-card__wrap profit-card__wrap-2">
+                  <div data-aos="fade-up-left" class="profit-card__wrap profit-card__wrap-2">
                     <div class="profit-card">
                       <div class="profit-card__num">
                         02
@@ -129,7 +130,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="profit-card__wrap profit-card__wrap-4">
+                  <div data-aos="fade-up-left" class="profit-card__wrap profit-card__wrap-4">
                     <div class="profit-card">
                       <div class="profit-card__num">
                         04
@@ -141,7 +142,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="profit-card__wrap profit-card__wrap-2">
+                  <div data-aos="fade-up-left" class="profit-card__wrap profit-card__wrap-2">
                     <div class="profit-card">
                       <div class="profit-card__num">
                         06
@@ -153,7 +154,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="profit-card__wrap profit-card__wrap-4">
+                  <div data-aos="fade-up-left" class="profit-card__wrap profit-card__wrap-4">
                     <div class="profit-card">
                       <div class="profit-card__num">
                         08
@@ -281,7 +282,7 @@
     </div>
   </div>
   <div class="target">
-    <img src="img/Union__targ.svg" alt="" class="target__union">
+    <img src="img/Union__targ.svg" alt="" class="target__union union-rotate_back">
     <div class="container">
       <div class="target__wrap">
         <div class="target__text">
@@ -490,9 +491,8 @@ This site is not a part of the Facebook website or Facebook Inc. Additionally, T
       </div>
     </div>
   </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-  <script src="js/jquery.parallax.min.js"></script>
-  <script src="js/jquery.event.frame.js"></script>
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>

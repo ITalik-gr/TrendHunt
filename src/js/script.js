@@ -4,6 +4,9 @@
   //   $('.paral').parallax();
   // });
 
+  AOS.init({
+    duration: 1500,
+  });
 
 $(document).ready(function() {
   $('.accordion__header').click(function() {
