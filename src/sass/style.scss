@@ -199,7 +199,51 @@ html,body {
     transform: translateY(0);
   }
 }
-
+.nav-menu {
+  display: none;
+  &__list {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    list-style-type: none;
+  }
+}
+.toggle {
+  cursor: pointer;
+  width: 30px;
+  height: 25px;
+  position: relative;
+  display: none;
+  span {
+    height: 3px;
+    width: 100%;
+    background: #000;
+    display: block;
+    position: absolute;
+  }
+  &-1 {
+    top: 0;
+    left: 0;
+  }
+  &-2 {
+    top: 50%;
+    transform: translateY(-1.5px);
+    left: 0;
+  }
+  &-3 {
+    bottom: 0;
+    left: 0;
+  }
+}
+.btn-width {
+  height: 68px;
+  display: none;
+  width: 100%;
+  font-size: 16px;
+  line-height: 19px;
+  margin-top: -10px;
+}
 
 
 
@@ -212,3 +256,6 @@ html,body {
 @import '../sass/block/video';
 @import '../sass/block/graf';
 @import '../sass/block/question';
+
+
+@import '../sass/base/media';

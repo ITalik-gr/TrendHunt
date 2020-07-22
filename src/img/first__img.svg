@@ -1,5 +1,4 @@
 <svg width="1440" height="1059" viewBox="0 0 1440 1059" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="165" y="491" width="445" height="149" rx="20" fill="white"/>
 <g filter="url(#filter0_d)">
 <rect x="198" y="140" width="1045" height="659" rx="20" fill="white"/>
 </g>
@@ -62,7 +61,7 @@
 <rect x="122" y="94" width="238" height="316" rx="20" fill="white"/>
 </g>
 <g filter="url(#filter3_d)">
-<rect x="1085" y="428" width="238" height="238" rx="20" fill="white"/>
+<rect x="1085" y="428" width="238" height="166" rx="20" fill="white"/>
 </g>
 <rect opacity="0.5" x="142" y="69" width="198" height="278" rx="20" fill="white"/>
 <path d="M315.788 188.159C319.856 187.269 322.465 183.236 321.216 179.263C316.984 165.801 309.433 153.572 299.21 143.73C287.169 132.139 271.963 124.379 255.512 121.431C239.062 118.483 222.106 120.479 206.791 127.167C191.475 133.855 178.486 144.935 169.467 159.005C160.448 173.075 155.804 189.504 156.121 206.213C156.439 222.923 161.705 239.163 171.252 252.879C180.8 266.596 194.201 277.174 209.76 283.275C222.972 288.455 237.237 290.21 251.236 288.435C255.367 287.911 257.943 283.856 257.053 279.788C256.163 275.72 252.143 273.187 248.002 273.631C236.932 274.817 225.699 273.326 215.265 269.235C202.482 264.223 191.473 255.533 183.63 244.264C175.786 232.995 171.46 219.654 171.199 205.926C170.938 192.199 174.753 178.702 182.163 167.143C189.572 155.584 200.243 146.482 212.825 140.988C225.408 135.493 239.337 133.853 252.852 136.275C266.367 138.697 278.859 145.072 288.751 154.594C296.825 162.367 302.87 171.952 306.414 182.506C307.74 186.454 311.72 189.049 315.788 188.159Z" fill="#AA89E9"/>
@@ -72,6 +71,8 @@
 <circle cx="157.5" cy="336.5" r="9.5" fill="#89D8E9"/>
 <circle cx="157.5" cy="366.5" r="9.5" fill="#AA89E9"/>
 <rect x="1108" y="451" width="48" height="48" rx="6" fill="#EEEEEE"/>
+<rect x="1108" y="528" width="189" height="11" rx="5.5" fill="#EEEEEE"/>
+<rect opacity="0.6" x="1108" y="546" width="112" height="11" rx="5.5" fill="#EEEEEE"/>
 <path d="M1176 493C1179.84 485.755 1190.71 472.647 1203.47 478.18C1219.42 485.096 1231.39 490.53 1243.35 478.18C1255.31 465.83 1265.95 453.48 1285 457.926" stroke="#4AB8FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
 <defs>
 <filter id="filter0_d" x="-2" y="0" width="1445" height="1059" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
@@ -97,7 +98,7 @@
 <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
 <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
 </filter>
-<filter id="filter3_d" x="995" y="373" width="418" height="418" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter3_d" x="995" y="373" width="418" height="346" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
 <feOffset dy="35"/>
