@@ -44,14 +44,14 @@
     border-radius: 100px;
   }
 }
-@media (min-width: 767px) {
+@media (max-width: 767px) {
   .video {
     display: flex;
+    flex-direction: column-reverse!important;
   }
   .video__image {
     img {
-      flex: 0 0 50%;
-      transform: translate(-100%, 0px);
+      transform: translate(0, 0px);
     }
 
   }
