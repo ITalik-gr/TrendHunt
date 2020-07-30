@@ -1,0 +1,51 @@
+
+.bonus {
+  background: #713BDB;
+  padding: 52px 0px 182px 0px;
+  margin-top: 130px;
+  margin-bottom: 32px;
+  &__shopify {
+    padding: 52px 0px 290px 0px;
+    margin-bottom: 55px!important;
+  }
+  &-tarif {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin-top: -140px;
+    &__shopify {
+      margin-top: -235px;
+    }
+  }
+  &__title {
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 126.1%;
+    text-align: center;
+    color: #FFFFFF;
+    
+  }
+  &-card {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 126.1%;
+    text-align: center;
+    color: #FFFFFF;
+    width: 263px;
+    height: 76px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.11);
+    border-radius: 10px;
+    margin-right: 19px;
+    &:last-child {
+      margin-right: 0;
+    }
+    &__wrap {
+      margin-top: 32px;
+      display: flex;
+      justify-content: center; 
+    }
+  }
+}

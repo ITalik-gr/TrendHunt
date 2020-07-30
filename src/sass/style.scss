@@ -237,16 +237,26 @@ html,body {
   }
 }
 .btn-width {
-  height: 68px;
-  display: none;
-  width: 100%;
-  font-size: 16px;
-  line-height: 19px;
-  margin-top: -10px;
+  display: flex;
 }
-
-
-
+.education {
+  &-header {
+    &__img {
+      margin-top: 62px!important;
+    }
+  }
+}
+.shopify {
+  &-header {
+    &__img {
+      margin-top: 0!important;
+      img {
+        max-width: 788px;
+        max-height: 463px;
+      }
+    }
+  }
+}
 @import '../sass/block/button';
 @import '../sass/block/footer';
 @import '../sass/block/header';
@@ -256,6 +266,16 @@ html,body {
 @import '../sass/block/video';
 @import '../sass/block/graf';
 @import '../sass/block/question';
+@import '../sass/block/why-stripe';
+@import '../sass/block/claim';
+@import '../sass/block/money';
+@import '../sass/block/request';
+@import '../sass/block/reviews';
+@import '../sass/block/stripe-modal';
+@import '../sass/block/tarif';
+@import '../sass/block/list';
+@import '../sass/block/bonus';
+
 
 
 @import '../sass/base/media';

@@ -1,0 +1,79 @@
+
+.why-stripe {
+  background: url(../img/stripe-bg.svg);
+  background-repeat: no-repeat;
+  background-position: start;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 190px;
+  &__wrap {
+    
+  }
+  &-card {
+    &__wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: -152px;
+    }
+  }
+  &__title {
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 63px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 95px;
+  }
+  &__block {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 23px 35px 62px 34px;
+    &-wrap { // Обертка для всех блоков
+      margin-top: 65px;
+    }
+    &-wrapper { // обертка для двух блоков top
+      display: flex;
+      justify-content: space-between;
+    }
+    &-width {
+      margin-top: 33px;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      padding: 41px 190px 40px 42px;
+      .why-stripe__block__body {
+        margin-left: 37px;
+        p {
+          max-width: 776px;
+        }
+      }
+    }
+    &__top {
+      span {
+        background: #713BDB;
+        border-radius: 50%;
+        width: 65px;
+        height: 65px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 39px;
+        font-weight: bold;
+        color: white;
+      }
+    }
+    &__body {
+      margin-top: 20px;
+      font-size: 20px;
+      line-height: 27px;
+      color: #FFFFFF;
+      p {
+        max-width: 470px;
+      }
+    }
+  }
+}
+

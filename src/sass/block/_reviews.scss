@@ -1,0 +1,19 @@
+
+.reviews {
+  margin-top: 90px;
+  margin-bottom: 72px;
+  &__wrap {
+    background: #EFEFEF;
+    border-radius: 25px;
+    height: 715px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__text {
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #000000;
+  }
+}
