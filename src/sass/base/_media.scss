@@ -9,6 +9,25 @@
 }
 
 @media (max-width: 1200px) { //992
+  .education-header__img {
+    display: flex!important;
+  }
+  .shopify-header__img {
+    display: flex!important;
+  }
+  .list {
+    &__title {
+      font-size: 44px;
+      line-height: 53px;
+    }
+  }
+  .list {
+    &__items {
+      ul {
+        width: 500px;
+      }
+    }
+  }
   .nav {
     &__btn {
       padding: 10px 12px;
@@ -100,9 +119,73 @@
       }
     }
   }
+  .why-stripe {
+    background-size: cover;
+    &__block {
+      margin-top: 33px;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      padding: 41px 190px 40px 42px;
+      .why-stripe__block__body {
+        margin-left: 37px;
+        p {
+          max-width: 776px;
+        }
+      }
+      &-wrapper {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+    }
+  }
+  .claim {
+    margin-bottom: 100px;
+    &__title {
+      font-size: 42px;
+      line-height: 51px;
+    }
+    &__wrap {
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    &-card {
+      margin-bottom: 25px;
+    }
+  }
+  .money {
+    &__wrap {
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+    }
+    &__text {
+      margin-bottom: 35px;
+    }
+  }
 }
 
 @media (max-width: 992px) { //768 
+  .list {
+    &__title {
+      font-size: 33px;
+      line-height: 46px;
+    }
+    &__items {  
+      ul {
+        width: 390px;
+      }
+    }
+  }
+  .bonus {
+    &-card {
+      font-size: 14px;
+    }
+  }
+  
   .elipse-top-bottom {
     display: none;
   }
@@ -221,8 +304,94 @@
       }
     }
   }
+  .why-stripe {
+    margin-top: 100px;
+    &-card {
+      &__wrap {
+        margin-top: -52px;
+      }
+    }
+    &__title {
+      font-size: 35px;
+      line-height: 41px; 
+    }
+    &__block {
+      padding: 41px 30px 40px 42px;
+    }
+  }
+  .tarif-card {
+    min-height: 354px;
+    min-width: 390px;
+    &__title {
+      font-size: 29px;
+      line-height: 26px;
+    }
+    &__descr {
+      max-height: 20px;
+    }
+    &__price {
+      font-size: 36px;
+    }
+    &__btn {
+      margin-top: 15px;
+    }
+  }
+  .claim {
+    margin-top: 0;
+    &__title {
+      font-size: 31px;
+      line-height: 36px;
+    }
+  }
+  .money {
+    &__title {
+      font-size: 32px;
+      line-height: 36px;
+    }
+  }
+  .request {
+    &:after {
+      top: -20px;
+    }
+    &__title {
+      max-height: 130px;
+      font-size: 30px;
+      line-height: 116.1%;  
+    }
+  }
 }
 @media (max-width: 768px) { //576 
+  .tarif {
+    &__wrap {
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+    }
+    &__text {
+      margin-top: 20px;
+      text-align: center;
+      margin-right: 0;
+    }
+  }
+  .list {
+    &__items {
+      ul {
+        max-width: 100%;
+        width: 100%;
+      }
+    }
+    &__title {
+      &-wrap {
+        position: relative;
+        margin-bottom: 50px;
+      }
+    }
+    &__wrap {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
   .nav {
     &__list {
       display: none;
@@ -405,6 +574,32 @@
       flex-direction: row;
       justify-content: space-between;
       align-items: flex-start;
+    }
+  }
+  .why-stripe {
+    &__block {
+      padding: 15px 25px 22px 32px;
+      &__body {
+        font-size: 16px;
+        margin-left: 30px;
+      }
+    }
+    &__title {
+      margin-top: 45px;
+      font-size: 34px;
+      line-height: 47px;
+    }
+  }
+  .money {
+    &__image {
+      img {
+        max-width: 80%;
+      }
+    }
+  }
+  .request {
+    &:after {
+      display: none;
     }
   }
 }
@@ -669,6 +864,74 @@
       font-size: 12px;
       line-height: 14px;
       padding-bottom: 10px;
+    }
+  }
+  .why-stripe {
+    &__block {
+      &__top {
+        display: none;
+      }
+    }
+  }
+  .why-stripe__block .why-stripe__block__body {
+    margin-left: 0px;
+  }
+  .claim {
+    margin-bottom: 50px;
+    &__title {
+      font-size: 27px;
+      line-height: 33px;
+    }
+    &-card {
+      &__descr {
+        font-size: 17px;
+        p {
+          max-width: 207px;
+        }
+      }
+    }
+  }
+  .request {
+    &__title {
+      max-height: 210px;
+      font-size: 24px;
+      line-height: 116.1%;
+    }
+  }
+  .tarif {
+    &-card {
+      padding: 25px 0px 25px 0px!important;
+      min-width: 290px!important;
+      &__title {
+        font-size: 25px;
+      }
+      &__education {
+        min-height: 353px !important;
+      }
+    }
+  }
+  .list {
+    margin-top: 55px;
+    &__items {
+      &__item {
+        span {
+          display: none;
+        }
+      }
+
+    }
+  }
+  .bonus {
+    &__title {
+      font-size: 25px;
+      line-height: 124.1%;
+    }
+    &-card {
+      margin-right: 0;
+      margin-bottom: 10px;
+      &__wrap {
+        flex-wrap: wrap;
+      }
     }
   }
 }

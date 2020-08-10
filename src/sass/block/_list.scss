@@ -20,7 +20,8 @@
   }
   &__items {
     ul {
-      list-style-image: url(../img/Ellipse__list.svg);
+      // list-style-image: url(../img/Ellipse__list.svg);
+      list-style-type: none;
     }
     &__item {
       font-weight: 800;
@@ -29,8 +30,16 @@
       color: #000000;
       margin-bottom: 50px;
       max-width: 605px;
+      display: flex;
+      justify-content: start;
+      align-items: center;
       span {
-
+        background: url(../img/Ellipse__list.svg);
+        background-repeat: no-repeat;
+        display: flex;
+        height: 13px;
+        width: 28px!important;
+        padding-right: 17px;
       }
     }
   }
