@@ -4,9 +4,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Сайт на Shopify</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="favicon/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -22,7 +30,7 @@
           <li class="nav__list__item"><a href="index.html">Главная</a></li>
           <li class="nav__list__item"><a href="stripe.html">Аренда Stripe</a></li>
           <li class="nav__list__item"><a href="education.html">Обучение</a></li>
-          <li class="nav__list__item"><a href="shopify.html">Сайт на Shopify</a></li>
+          <li class="nav__list__item"><a class="nav__list__item-active" href="shopify.html">Сайт на Shopify</a></li>
         </ul>
         <a href="#" class="nav__btn">Трендовые товары</a>
         <div class="toggle">
@@ -73,7 +81,7 @@
               300$
             </span>
           </div>
-          <a href="#" class="tarif-card__btn btn">Зарегистрироваться</a>
+          <a href="#modal" class="tarif-card__btn btn">Зарегистрироваться</a>
       </div>
       </div>
     </div>
@@ -128,7 +136,7 @@
           300$
         </span>
       </div>
-      <a href="#" class="tarif-card__btn btn">Зарегистрироваться</a>
+      <a href="#modal" class="tarif-card__btn btn">Зарегистрироваться</a>
   </div>
   </div>
 
@@ -172,5 +180,69 @@ This site is not a part of the Facebook website or Facebook Inc. Additionally, T
       </div>
     </div>
   </div>
+
+
+
+  <div class="stripe-modal modal" id="modal">
+    <a href="#" class="stripe-modal__area"></a>
+    <div class="stripe-modal__card">
+      <a href="#" class="close">
+        <img src="img/bi_x.svg" alt="close">
+      </a>
+      <div class="stripe-modal__title">
+        Аккаунт Stripe
+      </div>
+      <div class="stripe-modal__body">
+        <div class="stripe-modal__block">
+          <div class="stripe-modal__line stripe-modal__name">
+            <span>Имя</span>
+            <input placeholder="Имя" type="text">
+          </div>
+          <div class="stripe-modal__line stripe-modal__name">
+            <span>Фамилия</span>
+            <input placeholder="Фамилия" type="text">
+          </div>
+        </div>
+        <div class="stripe-modal__block">
+          <div class="stripe-modal__line stripe-modal__name">
+            <span>Почта</span>
+            <input placeholder="Email" type="email">
+          </div>
+          <div class="stripe-modal__line stripe-modal__name">
+            <span>Телефон</span>
+            <input placeholder="Телефон" type="number" name="tel" id="">
+          </div>
+        </div>
+        <div class="stripe-modal__block">
+          <div class="stripe-modal__line stripe-modal__name">
+            <span>Ссылка на ваш веб сайт</span>
+            <input placeholder="Ссылка" type="text">
+          </div>
+          <div class="stripe-modal__line stripe-modal__name">
+            <span>На какой платформе магазин</span>
+            <input placeholder="Например Shopify" type="text">
+          </div>
+        </div>
+        <div class="stripe-modal__block">
+          <div class="stripe-modal__line stripe-modal__name">
+            <span>Опишите ваш магазин</span>
+            <textarea placeholder="Описание" name="descr" id="" cols="30" rows="10"></textarea>
+          </div>
+        </div>
+        <div class="stripe-modal__block">
+          <div class="stripe-modal__line stripe-modal__name">
+            <span>Промокод</span>
+            <textarea placeholder="Промокод" name="descr" id="" cols="30" rows="10"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="stripe-modal__button">
+        <a href="#" class="stripe-modal__btn btn">Отправить заявку</a>
+      </div>
+    </div>
+  </div>
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+  <script src="js/script.js"></script>
 </body>
 </html>

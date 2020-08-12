@@ -45,6 +45,10 @@
     align-items: center;
     width: 237px;
     height: 68px;
+    transition: .3s all;
+    &:hover {
+      color: #6233c0;
+    }
   }
   &__descr {
     max-height: 36px;

@@ -18,10 +18,17 @@
     &__item {
       line-height: 22px;
       margin-right: 50px;
+      &-active {
+        color: #713BDA!important;
+      }
       a {
         font-weight: 500;
         font-size: 16px;
         color: #000000;
+        transition: .3s all;
+        &:hover {
+          color: #713BDA;
+        }
       }
     }
   }

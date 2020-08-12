@@ -70,8 +70,10 @@
     position: relative;
     border-radius: 10px;
     padding: 40px 30px 62px 23px;
+    cursor: pointer;
+    transition: .3s all;
     &:hover {
-      cursor: pointer;
+      box-shadow: 0px 11px 40px rgba(0, 0, 0, 0.05);
     }
     &__wrap {
       position: relative;

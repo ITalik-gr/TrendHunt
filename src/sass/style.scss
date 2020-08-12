@@ -37,6 +37,9 @@ html,body {
   width: 237px;
   height: 68px;
   box-sizing: border-box;
+  &:hover {
+    // color: white;
+  }
 }
 .btn-log {
     background: #713BDB;
@@ -52,7 +55,9 @@ html,body {
     line-height: 19px;
     color: #FFFFFF;
     position: relative;
+    transition: .3s all;
     &:after {
+      z-index: -1;
       content: '';
       background: #713BDB;
       opacity: 0.8;
@@ -64,6 +69,10 @@ html,body {
       width: 100%;
       height: 32px;
       left: 0;
+    }
+    &:hover {
+      background: #4B2694;
+      color: white;
     }
 }
 .elipse-h-r-1 {

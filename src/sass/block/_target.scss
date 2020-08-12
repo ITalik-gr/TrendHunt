@@ -72,6 +72,10 @@
       box-sizing: border-box;
       max-width: 237px;
       max-height: 68px;
+      transition: .3s all;
+      &:hover {
+        color: #713BDB;
+      }
     }
   }
   &-card {
